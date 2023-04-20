@@ -18,9 +18,9 @@ for (var i = 0; i < 53; i++) {
 //参数1：发送的请求地址  参数2：发送的请求方式   参数3中opts接收调用时传递的参数
 //参数3即为.vue中调用是传递的参数：{"currentPage":1,"pageSize":5}
 //返回值为totals【总数量】和 data【当前页的分页数据】
-Mock.mock(new RegExp('/user/list'), 'post', (opts) => {
+Mock.mock(new RegExp('/user/table'), 'post', (opts) => {
   var list =dataList;
-  // console.log("=======================user.js=====================");
+  // console.log("=======================userList.js=====================");
   // console.log(opts);//Object { url: "/user/list", type: "POST", body: "{\"currentPage\":1,\"pageSize\":5}" }
   // console.log(opts.body);//{"currentPage":1,"pageSize":5} - json格式的字符串
   var currentPage = JSON.parse(opts.body).currentPage;
