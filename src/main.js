@@ -8,6 +8,8 @@ import 'element-ui/lib/theme-chalk/index.css';
 import userList from './js/userList.js';
 import userTable from './js/userTable.js';
 import userDetail from './js/userDetail.js';
+import user from './js/user.js';
+import user1 from './js/user1.js';
 // 导入axios
 import axios from "axios";
 // 配置请求的基本路径
